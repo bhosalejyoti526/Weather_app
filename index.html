@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<title>Weather App</title>
+</head>
+<body>
+	<div class="mdiv">
+		<div class="container">
+			<h3 align="center" class="heading"> WEATHER FORECAST</h3>
+			<form autocomplete="off">
+				<div class="component">
+					<div>
+						<input type="text" name="city" id="city_name" placeholder="Enter a City Name" autofocus >
+					
+					</div>
+					<div class="btn">
+						<button type="button" onclick="fetchCity()" style="background: transparent; border: none;"> <img src="https://cdn-icons-png.flaticon.com/512/847/847486.png" height="23px" alt="search icon" class="srch_btn"> </button>
+					</div>
+				</div>
+				<br>
+				<div align="center" style="margin-top: -30px;">
+					<img src="https://static.vecteezy.com/system/resources/previews/020/716/723/original/3d-minimal-weather-forecast-concept-partly-cloudy-in-the-morning-weather-icon-3d-illustration-png.png" alt="weather_icon" height="150px">
+				</div>
+				<div align="center" style="margin-top:-20px">
+					<span id="city" class="tracking-in-expand">CITY NAME</span> <br>
+					<span class="measurement" id="temp">0°C</span>
+				</div>
+				<div align="center" style="margin-top:20px">
+					<table width="100%" cellpadding="10px">
+						<tr align="center">
+							<td>
+								<h5 class="headings">WIND SPEED</h5>
+								<span class="measurement" id="wind_speed">0 km/hr</span>
+							</td>
+							<td>
+								<h5 class="headings"> HUMIDITY</h5>
+								<span class="measurement" id="humidity">0 g/kg</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
